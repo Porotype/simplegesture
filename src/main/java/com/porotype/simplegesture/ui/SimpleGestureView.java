@@ -22,9 +22,8 @@ import com.vaadin.flow.router.Route;
 import java.util.ArrayList;
 import java.util.List;
 
-@Route("gestures")
+@Route("")
 @PageTitle("Simple Gesture")
-@Menu(order = 1, icon = "vaadin:hand", title = "Gestures")
 public class SimpleGestureView extends VerticalLayout {
 
     private final Button recordButton = new Button("Record gesture");
