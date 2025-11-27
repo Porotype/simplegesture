@@ -61,8 +61,12 @@ add(viewtoolbar);
 
         simpleGesture.addGestureEventListener(this::handleGesture);
         simpleGesture.getStyle().set("z-index", "1");
+VerticalLayout verticallayout = new VerticalLayout();
+verticallayout.add(status);
+verticallayout.add(gestureGrid);
+verticallayout.getStyle().setFlexGrow("1");
+add(verticallayout, simpleGesture);
 
-        add(status, gestureGrid, simpleGesture);
         setFlexGrow(1, gestureGrid);
         setHorizontalComponentAlignment(FlexComponent.Alignment.STRETCH, status, gestureGrid);
     }
