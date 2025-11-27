@@ -1,6 +1,8 @@
 # Simplegesture README
 
-- [ ] TODO Replace or update this README with instructions relevant to your application
+A Vaadin 25 playground that includes a modern rewrite of the classic SimpleGesture component.
+Use it to capture mouse or touch gestures as sequences of directions (0-7) and match them with
+Levenshtein distance.
 
 ## Project Structure
 
@@ -44,6 +46,8 @@ architectural layers. It includes two feature packages: `base` and `examplefeatu
 * The `examplefeature` package is an example feature package that demonstrates the structure. It represents a 
   *self-contained unit of functionality*, including UI components, business logic, data access, and an integration test.
   Once you create your own features, *you'll remove this package*.
+* The `simplegesture` package contains the rewritten component (`SimpleGesture`) and a demo view available at
+  `/gestures`.
 
 
 ## Starting in Development Mode
@@ -73,6 +77,29 @@ If you use commercial components, pass the license key as a build secret:
 
 ```bash
 docker build --secret id=proKey,src=$HOME/.vaadin/proKey .
+```
+
+## Trying the gesture demo
+
+Run `./mvnw` and open http://localhost:8080/gestures. Move the mouse (or touch on a phone/tablet) anywhere on the page
+to trigger gestures. Use the "Record gesture" button to capture a new sequence and save it with a name. The default
+gestures include clockwise/counter-clockwise turns and a circle.
+
+## Using the SimpleGesture component
+
+```java
+var gestures = new SimpleGesture();
+gestures.addGesture("7001", "Clockwise");
+gestures.setNormalizing(true);          // optional: collapse repeated directions
+gestures.setDefaultMaxDistance(20);     // Levenshtein distance threshold
+
+gestures.addGestureEventListener(event -> {
+    if (event.getMatched() != null) {
+        Notification.show("Gesture: " + event.getData());
+    }
+});
+
+add(gestures); // component is invisible but listens globally to pointer events
 ```
 
 ## Getting Started

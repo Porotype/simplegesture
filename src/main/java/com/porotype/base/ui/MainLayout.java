@@ -25,7 +25,7 @@ public final class MainLayout extends AppLayout {
 
     private Component createHeader() {
         // TODO Replace with real application logo and name
-        var appLogo = VaadinIcon.CUBES.create();
+        var appLogo = VaadinIcon.POINTER.create();
         appLogo.setSize("48px");
 
         var appName = new Span("Simplegesture");
