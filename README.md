@@ -81,7 +81,7 @@ docker build --secret id=proKey,src=$HOME/.vaadin/proKey .
 
 ## Trying the gesture demo
 
-Run `./mvnw` and open http://localhost:8080/gestures. Move the mouse (or touch on a phone/tablet) anywhere on the page
+Run `./mvnw` and open http://localhost:8080. Move the mouse (or touch on a phone/tablet) anywhere on the page
 to trigger gestures. Use the "Record gesture" button to capture a new sequence and save it with a name. The default
 gestures include clockwise/counter-clockwise turns and a circle.
 
@@ -101,10 +101,3 @@ gestures.addGestureEventListener(event -> {
 
 add(gestures); // component is invisible but listens globally to pointer events
 ```
-
-## Getting Started
-
-The [Getting Started](https://vaadin.com/docs/latest/getting-started) guide will quickly familiarize you with your new
-Simplegesture implementation. You'll learn how to set up your development environment, understand the project 
-structure, and find resources to help you add muscles to your skeleton — transforming it into a fully-featured 
-application.
