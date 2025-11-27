@@ -37,6 +37,7 @@ public final class ViewToolbar extends Composite<HorizontalLayout> {
     public static Component group(Component... components) {
         var group = new HorizontalLayout(components);
         group.setWrap(true);
+group.getStyle().set("alignItems", "center");
         return group;
     }
 }

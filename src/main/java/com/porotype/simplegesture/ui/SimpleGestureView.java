@@ -52,9 +52,9 @@ public class SimpleGestureView extends VerticalLayout {
             int applied = value != null ? value : simpleGesture.getDefaultMaxDistance();
             simpleGesture.setDefaultMaxDistance(applied);
         });
+ViewToolbar viewtoolbar = new ViewToolbar("Simple Gesture", ViewToolbar.group(recordButton, normalize, maxDistance));
+add(viewtoolbar);
 
-        add(new ViewToolbar("Simple Gesture",
-                ViewToolbar.group(recordButton, normalize, maxDistance)));
 
         configureGestureGrid();
         seedGestures();
