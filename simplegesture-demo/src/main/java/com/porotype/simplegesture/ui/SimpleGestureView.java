@@ -33,6 +33,7 @@ public class SimpleGestureView extends VerticalLayout {
     private final Paragraph status = new Paragraph("Perform a gesture with your mouse or finger anywhere on the page.");
 
     public SimpleGestureView() {
+        getStyle().set("user-select", "none");
         setSizeFull();
         setPadding(false);
         setSpacing(false);
