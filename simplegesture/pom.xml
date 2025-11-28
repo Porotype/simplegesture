@@ -18,7 +18,7 @@
     <properties>
         <!-- The version used while developing/testing, update every once in a while -->
         <vaadin.version>25.0.0-beta7</vaadin.version>
-        <github.account>[YOUR_GITHUB_ACCOUNT]</github.account>
+        <github.account>Porotype</github.account>
         <github.project>simplegesture</github.project>
     </properties>
     <scm>
