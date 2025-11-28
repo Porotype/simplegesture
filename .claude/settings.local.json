@@ -1,0 +1,11 @@
+{
+  "enabledMcpjsonServers": [
+    "Vaadin",
+    "playwright"
+  ],
+  "permissions": {
+    "allow": [
+      "Bash(mvn clean install:*)"
+    ]
+  }
+}

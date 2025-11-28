@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.vaadin.addons.porotype</groupId>
+  <artifactId>simplegesture</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>SimpleGesture</name>
+  <description>A slim parent pom for Vaadin add-on projects</description>
+  <url>https://github.com/viritin/viritin-sb/simplegesture</url>
+  <organization>
+    <name>Vaadin Community</name>
+  </organization>
+  <licenses>
+    <license>
+      <name>Apache 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Matti Tahvonen</name>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/[YOUR_GITHUB_ACCOUNT]/simplegesture.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:/[YOUR_GITHUB_ACCOUNT]/simplegesture.git</developerConnection>
+    <url>https://github.com/[YOUR_GITHUB_ACCOUNT]/simplegesture</url>
+  </scm>
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/[YOUR_GITHUB_ACCOUNT]/simplegesture/issues</url>
+  </issueManagement>
+  <dependencies>
+    <dependency>
+      <groupId>com.vaadin</groupId>
+      <artifactId>vaadin-core</artifactId>
+      <version>25.0.0-beta7</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+</project>
